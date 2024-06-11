@@ -37,13 +37,13 @@ export default function Notes() {
 
     return (
         <div>
-            <h2>Notes</h2>
+            <h2>노트</h2>
             <input
                 type="text"
                 value={newNote}
                 onChange={(e) => setNewNote(e.target.value)}
             />
-            <button onClick={createNote}>Create Note</button>
+            <button onClick={createNote}>노트 생성</button>
             <ul>
                 {notes.map((note) => (
                     <li key={note.id}>
